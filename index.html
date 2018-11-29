@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+    .error
+    {
+        color: red;
+    }
+    .form input
+    {
+        
+        margin-top: 10px;
+        width: 230px;
+        height: 40px;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .form form
+    {
+        margin-top: 200px;
+        padding: 20px;
+        background-color: gainsboro;
+        width: 25%;
+        height: 45%;
+        border-radius: 6px;
+    }
+    </style>    
+</head>
+    <body>
+        <center>
+        <div class="form">
+        <form method="post" action="" name="vform" onsubmit="return validate()">
+            <input type="text" name="username" placeholder="user name">
+            <div id="name_error" class="error"></div>
+            
+            <input type="email" name="email" placeholder="E-mail">
+            <div id="email_error" class="error"></div>
+            
+            <input type="password" name="password" placeholder="password">
+            <br>
+            
+            <input type="password" name="confpass" placeholder="confirm password">
+            <div id="password_error" class="error"></div>
+            
+            <input type="submit">
+            </form>
+        </div>
+        </center>
+    <script src="main.js"></script>
+    </body>
+</html>
